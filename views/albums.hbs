@@ -1,0 +1,22 @@
+<div>
+  <div>
+    <a href="/">Go Home</a>
+    <h3>Here are the albums of the artists</h3>
+  </div>
+
+  <div>
+    <h3>
+      Albums of {{albums.[0].artists.[0].name}}
+    </h3>>
+
+    <ul>
+      {{#each albums}}
+        <li>{{this.name}}</li>
+        <img src="{{this.images.[0].url}}" height="300px" alt="{{this.name}}" />
+        <a href="/tracks/{{this.id}}">Songs</a>
+      {{/each}}
+    </ul>
+
+  </div>
+
+</div>

@@ -1,0 +1,16 @@
+<div>
+  <div>
+    <a href="/">Go Home</a>
+    <h3>Here are the artist search result's</h3>
+  </div>
+
+  <div>
+    {{#each this.data.artists.items}}
+      <div>
+        <h3>{{this.name}}</h3>
+        <img src="{{this.images.[0].url}}" height="300px" alt="{{this.name}}" />
+        <a href="/artist-search/{{this.id}}">See Albums</a>
+      </div>
+    {{/each}}
+  </div>
+</div>

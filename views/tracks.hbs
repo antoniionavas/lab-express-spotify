@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <a href="/">Go Home</a>
+    <h3>Here are the songs of the artists</h3>
+  </div>
+
+  <div>
+    <ul>
+      {{#each tracks}}
+        <li>{{this.name}}</li>
+        <audio>
+            <source src="{{this.preview.url}}" type="audio/mpeg">
+        </audio>
+      {{/each}}
+    </ul>
+
+  </div>
+
+</div>
